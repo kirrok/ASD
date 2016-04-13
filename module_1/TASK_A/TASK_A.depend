@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1456925313 source:/home/kirrok/Документы/Projects/TASK_A/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1456908387 source:/home/kirrok/Документы/Projects/TASK_A/main2.c
+

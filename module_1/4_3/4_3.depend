@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1458126741 source:/home/kirrok/Документы/Projects/4_3/main.cpp
+	<iostream>
+	<stdio.h>
+

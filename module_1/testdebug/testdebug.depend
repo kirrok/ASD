@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1456825800 source:/home/kirrok/Документы/Projects/testdebug/main.c
+	<stdio.h>
+	<stdlib.h>
+

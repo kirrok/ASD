@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1457725335 source:/home/kirrok/Документы/Projects/3_4_with_class_1st_try/src/arr_cont.cpp
+	"arr_cont.h"
+
+1457725335 /home/kirrok/Документы/Projects/3_4_with_class_1st_try/include/arr_cont.h
+
+1457737339 source:/home/kirrok/Документы/Projects/3_4_with_class_1st_try/main.cpp
+	<iostream>
+	<stdio.h>
+

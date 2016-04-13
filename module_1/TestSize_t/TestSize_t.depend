@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1456841502 source:/home/kirrok/Документы/Projects/TestSize_t/main.c
+	<stdio.h>
+	<stdlib.h>
+

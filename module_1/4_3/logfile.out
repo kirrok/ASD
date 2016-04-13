@@ -1,0 +1,101 @@
+==23665== Memcheck, a memory error detector
+==23665== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==23665== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==23665== Command: ./a.out
+==23665== Parent PID: 22561
+==23665== 
+--23665-- 
+--23665-- Valgrind options:
+--23665--    --leak-check=full
+--23665--    --log-file=logfile.out
+--23665--    -v
+--23665-- Contents of /proc/version:
+--23665--   Linux version 4.2.0-34-generic (buildd@lgw01-55) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #39~14.04.1-Ubuntu SMP Fri Mar 11 11:38:02 UTC 2016
+--23665-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3
+--23665-- Page sizes: currently 4096, max supported 4096
+--23665-- Valgrind library directory: /usr/lib/valgrind
+--23665-- Reading syms from /home/kirrok/Документы/Projects/4_3/a.out
+--23665-- Reading syms from /lib/x86_64-linux-gnu/ld-2.19.so
+--23665--   Considering /lib/x86_64-linux-gnu/ld-2.19.so ..
+--23665--   .. CRC mismatch (computed ef2bc4a1 wanted 12987a55)
+--23665--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.19.so ..
+--23665--   .. CRC is valid
+--23665-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--23665--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--23665--   .. CRC mismatch (computed 4f1eed43 wanted a323a3ab)
+--23665--    object doesn't have a symbol table
+--23665--    object doesn't have a dynamic symbol table
+--23665-- Scheduler: using generic scheduler lock implementation.
+--23665-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==23665== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-23665-by-kirrok-on-???
+==23665== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-23665-by-kirrok-on-???
+==23665== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-23665-by-kirrok-on-???
+==23665== 
+==23665== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==23665== don't want to do, unless you know exactly what you're doing,
+==23665== or are doing some strange experiment):
+==23665==   /usr/lib/valgrind/../../bin/vgdb --pid=23665 ...command...
+==23665== 
+==23665== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==23665==   /path/to/gdb ./a.out
+==23665== and then give GDB the following command
+==23665==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=23665
+==23665== --pid is optional if only one valgrind process is running
+==23665== 
+--23665-- REDIR: 0x4019ca0 (ld-linux-x86-64.so.2:strlen) redirected to 0x380764b1 (???)
+--23665-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--23665--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--23665--   .. CRC mismatch (computed fc68135e wanted 45f5e986)
+--23665--    object doesn't have a symbol table
+--23665-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--23665--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--23665--   .. CRC mismatch (computed ae683f7e wanted 08c06df2)
+--23665--    object doesn't have a symbol table
+==23665== WARNING: new redirection conflicts with existing -- ignoring it
+--23665--     old: 0x04019ca0 (strlen              ) R-> (0000.0) 0x380764b1 ???
+--23665--     new: 0x04019ca0 (strlen              ) R-> (2007.0) 0x04c2e1a0 strlen
+--23665-- REDIR: 0x4019a50 (ld-linux-x86-64.so.2:index) redirected to 0x4c2dd50 (index)
+--23665-- REDIR: 0x4019c70 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2f2f0 (strcmp)
+--23665-- REDIR: 0x401a9c0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c31da0 (mempcpy)
+--23665-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19
+--23665--   Considering /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19 ..
+--23665--   .. CRC mismatch (computed 5ce96d3c wanted bf86fabd)
+--23665--    object doesn't have a symbol table
+--23665-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--23665--   Considering /lib/x86_64-linux-gnu/libgcc_s.so.1 ..
+--23665--   .. CRC mismatch (computed 6116126e wanted 54e3f1f2)
+--23665--    object doesn't have a symbol table
+--23665-- Reading syms from /lib/x86_64-linux-gnu/libc-2.19.so
+--23665--   Considering /lib/x86_64-linux-gnu/libc-2.19.so ..
+--23665--   .. CRC mismatch (computed 600bae51 wanted b4d0580d)
+--23665--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.19.so ..
+--23665--   .. CRC is valid
+--23665-- Reading syms from /lib/x86_64-linux-gnu/libm-2.19.so
+--23665--   Considering /lib/x86_64-linux-gnu/libm-2.19.so ..
+--23665--   .. CRC mismatch (computed 0fbb5cf0 wanted cac31e3b)
+--23665--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.19.so ..
+--23665--   .. CRC is valid
+--23665-- REDIR: 0x53ddd60 (libc.so.6:strcasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--23665-- REDIR: 0x53e0050 (libc.so.6:strncasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--23665-- REDIR: 0x53dd530 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--23665-- REDIR: 0x53db7c0 (libc.so.6:rindex) redirected to 0x4c2da30 (rindex)
+--23665-- REDIR: 0x53d9ac0 (libc.so.6:strlen) redirected to 0x4c2e0e0 (strlen)
+--23665-- REDIR: 0x53dcfa0 (libc.so.6:__GI_memcmp) redirected to 0x4c30b80 (__GI_memcmp)
+--23665-- REDIR: 0x53d8070 (libc.so.6:strcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--23665-- REDIR: 0x53e8d20 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c2f1b0 (strcmp)
+--23665-- REDIR: 0x4e95ea0 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c2b790 (operator new[](unsigned long))
+--23665-- REDIR: 0x4e94120 (libstdc++.so.6:operator delete[](void*)) redirected to 0x4c2c7d0 (operator delete[](void*))
+--23665-- REDIR: 0x53e2730 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--23665-- REDIR: 0x53e8fd0 (libc.so.6:__memcpy_sse2_unaligned) redirected to 0x4c2f6b0 (memcpy@@GLIBC_2.14)
+--23665-- REDIR: 0x53dcf60 (libc.so.6:bcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--23665-- REDIR: 0x54b1060 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c30c00 (__memcmp_sse4_1)
+--23665-- REDIR: 0x53d3df0 (libc.so.6:free) redirected to 0x4c2bd80 (free)
+==23665== 
+==23665== HEAP SUMMARY:
+==23665==     in use at exit: 0 bytes in 0 blocks
+==23665==   total heap usage: 5 allocs, 5 frees, 124 bytes allocated
+==23665== 
+==23665== All heap blocks were freed -- no leaks are possible
+==23665== 
+==23665== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23665== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
