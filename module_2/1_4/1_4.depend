@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1459715379 source:/home/kirrok/workspace/Projects/module_2/1_4/main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+

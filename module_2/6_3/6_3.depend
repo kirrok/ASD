@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1460567065 source:/home/kirrok/workspace/Projects/module_2/6_3/main.cpp
+	<iostream>
+	<vector>
+

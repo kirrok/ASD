@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1459861909 source:/home/kirrok/workspace/Projects/module_2/2_4/main.cpp
+	<iostream>
+	<cmath>
+	<limits.h>
+
